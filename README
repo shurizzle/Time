@@ -1,12 +1,19 @@
+JSTIME
+======
+
+WTF is this?
+------------
 Time is a simple JavaScript object which simplify your life playing with dates.
 
-=ATTRIBUTES=
+ATTRIBUTES
+----------
 Time#now
     Attribute which contain informations about current date (DATE type)
 Time#time
     Attribute which contain informations about selected date (DATE type)
 
-=METHODS=
+METHODS
+-------
 Time ([OPTIONS])
     Constructor of class accept optionally OPTIONS for parameters
 Time#setOptions (OPTIONS)
@@ -14,7 +21,8 @@ Time#setOptions (OPTIONS)
 Time#format (FORMAT)
     Get a string with the date in the requested format
 
-=TYPES=
+TYPES
+-----
 DATE#:
     - year      (Integer)
     - month     (Integer)
