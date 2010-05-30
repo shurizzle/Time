@@ -123,7 +123,14 @@ var Time = function ()
         'i': function (those){ return those.zerify (those.time.min); },
         's': function (those){ return those.zerify (those.time.sec); },
         'u': function (those){ return those.time.usec.toString (); },
-        //'I': DON'T WONT TO IMPLEMENT THIS,
+        'I': function (those)
+        {
+            var a = new Date (those.subs.Y (those), 0),
+            c = Date.UTC (those.subs.Y (those), 0),
+            b = new Date(those.subs.Y (those), 6),
+            d = Date.UTC (those.subs.Y (those), 6);
+            return 0 + ((a - c) !== (b - d));
+        },
         'O': function (those){ return those.time.offset; },
         'P': function (those){ return those.time.offset.replace (/([\+-][0-9]{2})([0-9]{2})/, "$1:$2"); },
         'T': function (those){ return those.time.timezone; },

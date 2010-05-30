@@ -83,6 +83,8 @@ FORMAT: String
         -i Minutes with leading zeros (00 to 59)
         -s Seconds, with leading zeros (00 to 59)
         -u Microseconds (Example: 654321)
+        -I Whether or not the date is in daylight saving time (1 if Daylight
+                Saving Time, 0 otherwise.)
         -O Difference to Greenwich time (GMT) in hours (Example: +0200)
         -P Difference to Greenwich time (GMT) with colon between hours and
                 minutes (Example: +02:00)
